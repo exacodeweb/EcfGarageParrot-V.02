@@ -1,0 +1,832 @@
+/*@charset "UTF-8"; /*déterminer l'encodage d'une feuille de style. XXXXXX*/
+
+/*========================================================= HEADER ===================================================*/
+
+html {
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+.body {
+  background: #f1f1f1;
+  background-position: 100% 100%;
+  height: auto;
+  font-family: sans-serif;
+}
+
+button {
+  margin-top: 0px;
+}
+
+/*--------------------------------------------------------------------------------------- CONTENEUR TOPBAR ET NAVBAR--*/
+.content {
+  width: 100%;
+  position: fixed;
+  vertical-align: top;
+  z-index: 2;
+  height: auto;
+
+  background: #3533cd;
+  background: #d9777f;
+  border: 5px solid #262526; /**/
+}
+
+/*========================================================== TOPBAR ==================================================*/
+
+.topbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  color: white;
+}
+
+/*------------------------------------------------------------------------------------------------------------ LOGO --*/
+
+.img-logo-1 {
+  display: flex;
+  width: auto;
+  /*opacity: 0.8;*/
+  align-items: center;
+  background: transparent;
+}
+
+.logo {
+  display: flex;
+  width: auto;
+  height: 70px;
+  /*opacity: 0.8;*/
+  align-items: center;
+  /*background: transparent;*/
+  /*border: 1px solid yellow;*/
+}
+
+/* FORME GEOMETRIQUE */ /*
+.logo {
+  border-top-right-radius: 150px 100px;
+}*/
+
+.img-logo-2 {
+  display: flex;
+  width: auto;
+  /*opacity: 0.8;*/
+  align-items: center;
+  background: transparent;
+  width: 70px; /*70px*/
+  height: 70px; /*70px*/
+}
+
+.logo-2 {
+  display: flex;
+  width: auto;
+  height: 70px;
+  /*opacity: 0.8;*/
+  align-items: center;
+  /*background: transparent;*/
+  /*border: 1px solid yellow;*/
+}
+
+/* FORME GEOMETRIQUE */ /*
+.logo {
+  border-top-right-radius: 150px 100px;
+}*/
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+.topbar-container {
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+/*------------------------------------------------------------------------------------------------------------ Test --*/
+
+.btn-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70px; /*70px*/
+  width: 100%;
+  padding: 0px 10px 0px 10px;
+
+  border: none;
+}
+
+.btn-tel {
+  padding: 0px;
+  padding: 5px;
+  color: white; /*POUR COULEUR LOGO TEL*/
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  height: 50px; /*70px*/
+  width: auto;
+  border: none;
+  /*background-color: orangered;*/
+  /*border-radius: 5px;*/
+  /*border: 1px solid #262526;*/
+  /*box-shadow: inset 0 0 1em gold /*, 0 0 2em red*/ /*;*/
+}
+/*
+  .btn-nav-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+
+  }*/
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+.title-acceuil-c {
+  /*title*/
+  /*en superposition*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: 30px; /*280px*/ /* POUR REGLE LA HAUTEUR DU TITRE */ /* 30px */
+  z-index: 1;
+
+  /*height: 50px;*/
+  height: auto;
+  width: 100%;
+
+  margin-top: 10px;
+  text-decoration: none;
+
+  /*font-size: 3.385vw !important; /*65px*/
+  font-weight: 595;
+  /*font-family: "Tangerine", Arial, serif; /* Typo pour le Titre, et typo de substitution */
+  /*text-shadow: 2px 2px 2px orange;*/
+  text-shadow: 1px 1px 2px orangered, 0 0 1em gold, 0 0 2em red;
+  color: #262526;
+  opacity: 1;
+}
+h1/*,.text-center-c*/ {
+  font-size: 2.667vmax !important; /*65px*/ /*3.385vw*/
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+.btn {
+  padding: 0px;
+  margin: 10px 10px 10px 10px;
+
+  padding: 5px;
+  border: 1px solid white;
+  width: auto;
+  color: white;
+}
+
+.btn-toggle {
+  padding: 0px;
+  margin: 10px 10px 10px 10px;
+
+  padding: 5px;
+  border: 1px solid white;
+  width: auto;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: red;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+.link-nav {
+  color: white;
+  text-decoration: none;
+  top: 0px;
+  opacity: 1;
+  height: 100%;
+  width: auto;
+  /*font-size: 0.833vw;*/
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/*------------------------------------------------------------------------------------------------- BOTTON CARD IMG --*/
+.btn-group-card {
+  height: 100%;
+  align-items: center;
+  margin: 0px 0px 0px 0px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.link-btn {
+  height: 30px;
+  width: 160px;
+  border-radius: 50px;
+
+  text-align: center;
+  text-decoration: none;
+
+  margin-top: 50px;
+  margin-bottom: 10px;
+
+  align-items: center;
+}
+
+/*------------------------------------------------------------------------------------------------------------ NAVBAR */
+/* POUR PARAMETRE (COULEUR DU TOPBAR) */
+.navbar {
+  display: flex;
+  float: right;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 50px; /*HAUTEUR DE LA NAVBAR*/ /*70px*/
+  background: linear-gradient(#d9777f, #5696df);
+  background: linear-gradient(#3533cd, #5696df);
+  background: #d9777f;
+}
+
+/*-------------------------------------------------------------------------------------------------- OPTION TOGGLER --*/
+
+.navbar-toggler {
+  margin: 0px 0px 0px 10px;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+.collapse {
+  display: flex;
+  flex-direction: row;
+  justify-content: right; /*POUR ALIGNE LA NAVBAR A DROITE*/
+  height: 50px; /*70px*/ /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+  width: 100%;
+  padding: 0px;
+}
+
+/*------------------------------------------------------------------------------------------------------ NAVBAR-NAV --*/
+
+ul > .navbar-nav {
+  display: flex;
+  flex-direction: column;
+  float: right;
+  justify-content: right;
+  width: 100%;
+  height: 50px; /*70px*/ /*test modifier dans media-query  01/09/2023 */ /* indispensable pour le mode mobil et tablette */
+  align-items: right;
+}
+
+/* POUR PARAMETRE (COULEUR DU NAVBAR) */
+.nav-item {
+  display: flex;
+  flex-direction: column; /*ALIGNE LE TEXTE 'BOUTON TOGLE'*/
+  align-items: center;
+  margin: 0px 10px 10px 10px;
+  background: linear-gradient(#d9777f, #5696df);
+  background: linear-gradient(#3533cd, #5696df);
+  background: #d9777f;
+  border-radius: 5px;
+  height: 50px; /*100%*/ /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+  max-width: 30% !important; /* TEST  */
+}
+
+/* BOUTON NAVBAR */
+.nav-link {
+  display: flex !important;
+  flex-direction: row; /*row*/
+  align-items: center;
+  justify-content: center !important;
+  height: 50px; /*100%*/ /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+  color: white !important;
+  font-size: 14px;
+  text-align: center;
+}
+
+/*
+.admin {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: white !important;
+
+*/
+
+/*
+  padding: 0px;
+  padding: 5px;
+  color: white; /*POUR COULEUR LOGO TEL*/ /*
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  height: 50px;
+  width: auto;
+  border: none;
+}*/
+
+.admin {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.bi {
+  width: 16px;
+  height: 16px;
+  color: white;
+}
+
+.bi-user {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+/*=============================================== FIN DE TOPBAR ET NAVBAR ============================================*/
+
+/*-------------------------------------------------------------------------------------------------- IMAGES BANDEAU --*/
+/* ! commun Tous les fichiers */
+.block-img {
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-size: contain;
+  /*parametre: cover, fill*/
+  object-fit: cover;
+}
+
+.bandeau {
+  height: 350px;
+  width: 100%;
+  margin-top: 100px;
+}
+
+/*---------------------------------------------------------------------------------------------------- FIL D'ARIANE --*/
+/* ! commun Tous les fichiers */
+
+.breadcrumb-item {
+  width: 100%;
+  background: none;
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  /*rajouter en option*/
+  display: block;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+.link-rep {
+  margin-right: 5px;
+  margin-left: 5px;
+  text-decoration: none;
+}
+
+.link-rep:hover {
+  color: red !important;
+}
+
+/*------------------------------------------------------------------------------------- STYLE D'ARRIERE PLAN TOP-BAR--*/
+
+.link-nav:hover,
+span:hover {
+  color: yellow;
+  /*color: white;
+  background-color: #d9777f;*/
+  /*transition: 1s;*/
+}
+
+/* BOUTON NAVBAR */
+.nav-link:hover/*,
+.bi:hover*/ {
+  text-decoration: none;
+  color: yellow !important;
+  /*background-color: #d9777f;*/
+}
+
+.link-btn-Rating:hover {
+  background: #4caf50 !important;
+  color: white;
+}
+
+.btn:hover {
+  text-decoration: none;
+  color: lightgreen;
+  /*background crimson*/
+  background: green;
+  transition: 1s;
+}
+
+/*---------------------------------------------------------------------------------------------- STYLE ARRIERE PLAN --*/
+
+/*== TRES IMPORTANT PAS SUPRIME POUR REGLE TAILLE ICONE ==*/
+
+span {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  word-spacing: 2px;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+/*-- Test --*/
+.content,
+.navbar,
+.nav-item,
+.topbar {
+  background: #d94350; /*#d9777f*/
+}
+
+/*======================================================== ! TEST =====================================================*/
+/*
+.Navbar {
+  background-color: #d94350; /*#46ACC2*/ /*
+  display: flex;
+  padding: 16px; /*16px*/
+/*padding: 16px 16px 16px 16px;*/ /*
+  font-family: sans-serif;
+  color: white;
+
+  /*height: 50px;*/ /*
+}
+
+.Navbar__Link {
+  padding-right: 8px; /*8px*/ /*
+}
+
+.Navbar__Items {
+  display: flex;
+}
+
+.Navbar__Items--right {
+  margin-left: auto;
+}
+
+.Navbar__Link-toggle {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .Navbar__Items,
+  .Navbar {
+    flex-direction: column;
+  }
+
+  .Navbar__Items {
+    display: none;
+  }
+
+  .Navbar__Items--right {
+    margin-left: 0;
+  }
+  */ /*.Navbar__ToggleShow {
+    display: flex;
+  }
+
+  .Navbar__Link-toggle {
+    align-self: flex-end;
+    display: initial;
+    position: absolute;
+    cursor: pointer;
+  }
+}*/
+/*==================================================== MEDIA QUERIES =================================================*/
+
+/*== VALIDER W3W ==*/
+/*================================================== TOPBAR ET NAVBAR ================================================*/
+@media screen /*and (min-width: 320px) */ and (max-width: 700px) {
+  /*test 17*/
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 100%;
+    margin-top: 0px;
+    /*overflow: hidden;*/
+  }
+}
+
+/*------------------------------------------------------------------------------------------------------------ LOGO --*/
+@media screen /*and (min-width: 320px) */ and (max-width: 700px) {
+  /*test 17*/
+  .img-logo-1 {
+    height: 100%;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: 100%;
+    /*opacity: 0.8;*/
+    background: transparent;
+  }
+
+  .title-acceuil-c {
+    position: absolute;
+    top: 50px; /*280px*/ /* POUR REGLE LA HAUTEUR DU TITRE */ /* 30px */
+    z-index: 1;
+  }
+
+  /*----------------------------------------------------------------------------------------------------------TOPBAR--*/ /** 700px < **/
+  .icon-telephone,
+  .bi-envelope {
+    height: 0.7em; /*12px*/ /*0.625vw*/
+    width: 0.7em; /*12px*/ /*0.625vw*/
+  }
+
+  .link-nav {
+    font-size: 0.7em; /*12px*/
+    width: 100%;
+    margin: 0px 0px 0px 5px !important;
+  }
+  /*-----------------------------------------------------NAVBAR--*/
+  .nav-link {
+    font-size: 12px; /*12px*/
+  }
+
+  .bi-unlock-fill {
+    height: 0.8em; /*12px*/ /*0.625vw*/
+    width: 0.8em; /*12px*/ /*0.625vw*/
+  }
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+@media screen /*and (min-width: 320px) */ and (max-width: 700px) {
+  /*test 17*/
+  .btn-toggle {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    padding: 0px 10px 0px 10px;
+  }
+}
+/*
+@media screen and (min-width: 320px) and (max-width: 576px) {
+  /*.link-nav:hover {
+        background: crimson;
+      }*/ /*
+}                                                                         */
+
+/*------------------------------------------------------------------------------------------------------------ MENU --*/
+@media screen and (max-width: 700px) {
+  /*and (min-width: 320px)*/
+  .navbar {
+    height: auto;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    /* background: #3533cd;*/
+
+    height: 50px; /*50px*/
+  }
+
+  .nav-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 50px; /*100%*/ /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+  }
+
+  /*------------------------------------------------------------------------------------------------ OPTION TOGGLER --*/
+
+  /*@media screen and (min-width: 320px) and (max-width: 576px) {*/
+  .navbar-toggler {
+    /* 2 */
+    /*margin-right: 20px;*/
+    margin: 10px 0px 10px 10px;
+    /* 10px-haut 0px-droite 10px-bas 10px-gauche */
+    /*border-color: #3533cd;*/
+  }
+  /*}*/
+
+  /*@media screen and (min-width: 320px) and (max-width: 576px) {*/
+  .navbar-nav {
+    /* 4 */
+    margin: auto;
+    width: 100%;
+    margin-top: 0px; /*80px*/
+
+    height: 50px; /*70px*/
+  }
+  /*}*/
+
+  /*--------------------------------------------------------*/
+  /*@media screen and (min-width: 320px) and (max-width: 700px)*/ /* {*/
+  .dropdown-menu,
+  .dropdown-item {
+    margin-left: 10px;
+  }
+  /*}*/
+
+  /*@media screen and (min-width: 320px) and (max-width: 700px) {*/
+  .nav-item {
+    margin: 5px;
+    /*width: 30%;*/
+    font-size: 12px;
+  }
+}
+/*-- TOPBAR --*/
+@media screen /*and (min-width: 320px) */ and (max-width: 900px) {
+  /*test 17*/
+  .btn-group {
+    width: 100%;
+    padding: 0px;
+  }
+
+  .link-nav {
+    font-size: 0.7em; /*12px*/
+    width: 100%;
+    /*padding: 0px 5px 0px 5px;/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*************/
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 900px) {
+  /* and (min-width: 576px) */
+  .btn-tel,
+  .nav-link {
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+
+/*-- NAVBAR --*/
+@media screen and (min-width: 701px) /*and (max-width: 900px) */ {
+  .btn-toggle {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    padding: 0px 10px 0px 10px;
+  }
+
+  .navbar {
+    height: auto;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    height: 50px;
+  }
+
+  .nav-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 50px; /*100%*/ /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+    /*padding: 0px 5px 0px 5px !important;*/
+  }
+  /*
+  .navbar-toggler {
+    margin: 10px 0px 10px 10px;
+  }*/
+
+  .navbar-nav {
+    margin: auto;
+    width: 100%;
+    margin-top: 0px; /*80px*/
+    height: 50px; /*70px*/ /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+  }
+
+  /*------------------------------------------------------------------------------------------------------------------*/
+  .navbar-toggler {
+    /* 2 */
+    margin: 10px 0px 10px 10px;
+    /*10px-haut 0px-droite 10px-bas 10px-gauche */
+    /*border-color: #3533cd;*/
+  }
+
+  .navbar {
+    /*height: 70px; /*auto*/ /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    /*background: #3533cd;*/
+
+    height: 50px;
+  }
+}
+
+@media screen and (min-width: 701px) {
+  /* and (max-width: 900px) */
+  .nav-item {
+    margin: 5px; /*5px*/ /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+    /*max-width: 30%;*/
+    font-size: 16px; /*25px*/
+  }
+
+  /*----------------------------------------------------------------------------------------------------------TOPBAR--*/ /** 700px > **/
+  .icon-telephone,
+  .bi-envelope,
+  path,
+  .bi-unlock-fill {
+    height: 0.8em; /*12px*/ /*0.625vw*/
+    width: 0.8em; /*12px*/ /*0.625vw*/
+  }
+
+  .link-nav {
+    font-size: 1em; /*12px*/
+    width: 100%;
+    margin: 0px 0px 0px 5px !important;
+  }
+
+  .title-acceuil-c {
+    position: absolute;
+    top: 40px; /*280px*/ /* POUR REGLE LA HAUTEUR DU TITRE */ /* 30px */
+    z-index: 1;
+  }
+
+  /*----------------------------------------------------------------------------------------------------------NAVBAR--*/
+  .nav-link {
+    font-size: 16px; /*12px*/ /*0.7em*/
+  }
+
+  .bi-unlock-fill {
+    height: 1em; /*12px*/ /*0.625vw*/
+    width: 1em; /*12px*/ /*0.625vw*/
+  }
+}
+/*======================================================== ! TEST =====================================================*/
+
+@media screen and (min-width: 992px) {
+  /*992px*/
+  /* and (max-width: 992px)*/
+  .nav-link {
+    padding: 0px 5px 0px 5px !important;
+  }
+
+  .nav-item {
+    margin: 0px 5px 0px 5px;
+
+    width: auto;
+
+    display: flex;
+    float: right;
+    /*flex-direction: row;
+    justify-content: right;*/
+  }
+  .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    /*float: right;*/
+    justify-content: right;
+  }
+}
+/*
+  .visible {
+    display: table;
+  }
+  #menumobile {
+    display: none;
+  }
+  @media (max-width: 767px) {
+    .visible {
+      display: none;
+    }
+    #menumobile {
+      display: table;
+    }
+  }*/
+
+/*------------------------------------------------------------------------------------------------------------TOPBAR--*/ /** 300px < **/
+@media screen /*and (min-width: 300px) */ and (max-width: 300px) {
+  .icon-telephone,
+  .bi-envelope,
+  path {
+    height: 0.6em; /*12px*/ /*0.625vw*/
+    width: 0.6em; /*12px*/ /*0.625vw*/
+  }
+
+  .link-nav {
+    font-size: 0.6em; /*12px*/
+    width: 100%;
+    margin: 0px 0px 0px 5px !important;
+  }
+  /*----------------------------------------------------------------------------------------------------------NAVBAR--*/
+  .nav-link {
+    font-size: 0.8em; /*12px*/
+  }
+  .bi-unlock-fill {
+    height: 0.8em; /*12px*/ /*0.625vw*/
+    width: 0.8em; /*12px*/ /*0.625vw*/
+  }
+}

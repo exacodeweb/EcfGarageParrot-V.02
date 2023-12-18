@@ -1,0 +1,74 @@
+/*=================================================== PAGE TEMOIGNAGE ================================================*/
+/*====================================================================================================================*/
+/* Resolution d'ecran */
+/* Desktop > 1024px*/
+/* Tablette > 600 et 1024 < (mode portrait)*/
+/* Mobile > 320 et 600 < (mode portrait)*/
+/*--------------------------------------------------------------------------------------------------------- CONTENT --*/
+/*ciblent les écrans de largeur supérieure ou égale à 3200px (min-width)*/
+/*ciblent les écrans de largeur inférieure ou egale à 576 pixels (max-width*)*/
+
+/*---------------------------------------------------------------------------------------------------------- MAIN --*/ /*  DESACTIVER  TEST*/
+@media screen and (min-width: 320px) and (max-width: 576px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 100%;
+    margin-top: 0px;
+    padding: 0px;
+  }
+}
+
+/*--------------------------------------------------------------------------------------------- BLOCK FORMMULAIRE --*/
+@media screen and (min-width: 320px) and (max-width: 576px) {
+  .content-form-admin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: auto;
+    width: 100%;
+  }
+}
+
+/*---------------------------------------------------------------------------------------------------------- FORM --*/
+
+@media screen and (min-width: 320px) and (max-width: 576px) {
+  .block-form-admin {
+    width: 100%;
+    margin-left: 0px;
+    padding: 0px;
+  }
+
+  .section-form-admin {
+    width: 100%;
+    margin: 0px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    /*background: lemonchiffon;*/
+    margin-bottom: 40px;
+  }
+}
+
+/*--------------------------------------------------------- ligne 196 */
+
+@media screen and (min-width: 320px) and (max-width: 700px) {
+  .text {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  .text {
+    width: 70%;
+  }
+}

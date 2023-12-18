@@ -1,0 +1,507 @@
+/*=================================================== PAGE SPECIFICITE ================================================*/
+/*====================================================================================================================*/
+/* Resolution d'ecran */
+/* Desktop > 1024px*/
+/* Tablette > 600 et 1024 < (mode portrait)*/
+/* Mobile > 320 et 600 < (mode portrait)*/
+/*--------------------------------------------------------------------------------------------------------- CONTENT --*/
+/*ciblent les écrans de largeur supérieure ou égale à 3200px (min-width)*/
+/*ciblent les écrans de largeur inférieure ou egale à 576 pixels (max-width*)*/
+
+/* 1 */
+/*-------------------------------------------------- TITRE FICHE TECHNIQUE -------------------------------------------*/
+/*
+@media (min-width: 200px) {
+  .section-img-expos {
+    display: flex;
+    flex-direction: row;
+    width: 92%;
+    height: 100px;
+  }
+}
+
+@media (min-width: 600px) {
+  .section-img-expos {
+    display: flex;
+    flex-direction: row;
+    width: 70%; /*90%*/ /*
+    height: 100px;
+  }
+}
+
+@media (min-width: 800px) {
+  .section-img-expos {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 100px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .section-img-expos {
+    display: flex;
+    flex-direction: row;
+    width: 50%; /*50%*/ /*
+    height: 100px; /*100px*/ /*
+  }
+}                                                             */
+
+/*---------------------------------------------------------- TITRE ---------------------------------------------------*/
+@media screen and (min-width: 300px) and (max-width: 699px) {
+  .header-expo-file {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 0px;
+    width: 100%;
+  }
+
+  .section-img-expos {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: 100px;
+  }
+}
+/*-------------------------------------------------- PHOTO EXPO VEHICULE 2 -------------------------------------------*/
+@media screen and (min-width: 200px) {
+  /*.th-data {
+    width: auto;
+  }
+  .td-data {
+    width: auto;
+  }*/
+  .img-top-expo {
+    width: 22em; /*22em*/
+    height: 13.75em; /*13.75em*/
+    /*margin-left: 10px;
+    margin-right: 10px;*/
+    /*margin: 15px;*/
+  }
+}
+
+@media screen and (max-width: 700px) {
+  /*.th-data {
+    width: auto;
+  }
+  .td-data {
+    width: auto;
+  }*/
+  .img-top-expo {
+    width: 80%; /*22em*/
+    height: auto; /*13.75em*/
+    /*margin-left: 10px;
+    margin-right: 10px;*/
+    /*margin: 15px;*/
+  }
+}
+
+/*------------------------------------------------------------------------------------------------------------ GRID --*/
+
+@media screen and (max-width: 600px) {
+  .content-grid {
+    display: flex;
+    flex: 90%;
+    flex-direction: column;
+    height: auto;
+    padding: 5px;
+  }
+
+  .wrapper {
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  img > .box1,
+  img > .box2,
+  img > .box3,
+  img > .box4 {
+    background: #abebc6;
+    height: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex: 50%;
+    max-width: 50%;
+    align-content: center;
+    justify-content: center !important;
+  }
+}
+
+/*----------------------------------------------- 3 Lien vers fichier JAVASCRIPT -------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+/*-------------------------------------------------- GRID-2 EXPO VEHICULE 4 ------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------- 4 --*/
+
+@media screen and (min-width: 320px) {
+  .gallery {
+    width: auto;
+    height: auto;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr); /* repeat(8, 1fr)*/
+    grid-template-rows: repeat(5, 11vw); /* repeat(8, 5vw)*/ /* repeat(5, 5vw)*/
+    grid-gap: 0.5rem; /*1.5rem*/
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .gallery {
+    width: auto;
+    height: auto;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr); /* repeat(8, 1fr)*/
+    grid-template-rows: repeat(5, 8vw); /* repeat(8, 5vw)*/ /* repeat(5, 5vw)*/
+    grid-gap: 0.5rem; /*1.5rem*/
+  }
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+/*<!------------------------------------------------- GRID-3 DATA VEHICULE ------------------------------------------>*/
+
+/*---------------------------------------------------------------------------------------------------- Taille ecran --*/
+@media (min-width: 600px) {
+  /*media responsive pour mobile ecran >600*/
+  .content-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  /*media responsive pour mobile ecran >900*/
+  .content-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+/*---------------------------------------------------------------------------------------------------- Taille ecran --*/
+/*Test*/
+@media (max-width: 600px) {
+  /*media responsive pour mobile ecran >600*/
+  .block-cards/*, .card*/ {
+    width: 100%;
+  }
+  .content-cards/*, .card*/ {
+    max-width: 100%; /*60%*/
+  }
+
+  .card/*, .card*/ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*align-content: center;*/
+    max-width: auto !important; /*1200px*/ /*test 100%*/
+    padding: 0;
+  }
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+/*<!------------------------------------------------ TABLEAU DATA VEHICULE ------------------------------------------>*/
+
+@media screen and (min-width: 320px) and (max-width: 599px) {
+  .content-data-2 {
+    width: 100%;
+  }
+
+  .data-tab {
+    width: auto;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 899px) {
+  .data-tab {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 900px) and (max-width: 1223px) {
+  .data-tab {
+    width: 80%;
+  }
+}
+
+/*
+@media screen and (max-width: 800px) {
+  .data-tab {
+    width: 78%;/*78%*/ /*
+  }
+}
+@media screen and (max-width: 1200px) {
+  .data-tab {
+    width: 78%;/*78%*/ /*
+  }
+}*/
+/*
+@media screen and (min-width: 320px) and (max-width: 599px) {
+  .content-data-2 {
+    width: 100%;
+  }
+
+  .data-2 {
+    width: auto;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 899px) {
+  .data-2 {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 900px) and (max-width: 1223px) {
+  .data-2 {
+    width: 80%;
+  }
+}*/
+/*--------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------- TABLE-DATA-2 --------------------------------------------------*/
+
+@media screen and (max-width: 400px) {
+  /*.th-data {
+      width: auto;
+    }
+    .td-data {
+      width: auto;
+    }*/
+  .data-2 {
+    width: 100%; /*90%*/
+    /*margin-left: 10px;
+      margin-right: 10px;*/
+    margin: 5px; /*15px*/
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 599px) {
+  .data-2 {
+    width: 100%;
+  }
+
+  .data-2 {
+    width: auto;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 899px) {
+  .data-2 {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 900px) and (max-width: 1223px) {
+  .data-2 {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  /*.th-data {
+      width: auto;
+    }
+    .td-data {
+      width: auto;
+    }*/
+  .data-2 {
+    width: 100%; /*90%*/
+    /*margin-left: 10px;
+      margin-right: 10px;*/
+    margin: 5px; /*15px*/
+  }
+}
+/*
+@media screen and (max-width: 700px) {
+  .title-header-tab {
+    font-size: 18px;/*small*/ /*
+  }
+}*/
+
+/*----------------------------------------------------- Test CALANDAR OU ---------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------*/ /*
+@media screen and (min-width: 320px) and (max-width: 576px) {
+  .tbody {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+
+    border-radius: 5px;
+    border: 1px solid blue;
+  }
+}
+
+/*Test*/ /*
+@media screen and (min-width: 320px) and (max-width: 576px) {
+  .th,
+  .tr,
+  .td {
+    width: 100%;
+    font-size: 12px;
+  }
+}
+
+/*Test*/ /*
+@media screen and (min-width: 320px) and (max-width: 992px) {
+  .th,
+  .tr,
+  .td,
+  .col-1 {
+    width: 98px;
+    /*writing-mode: vertical-rl;*/
+/*text-orientation: mixed;*/ /*
+  }
+}                                                                                   */
+
+@media screen and (min-width: 320px) and (max-width: 992px) {
+  .content-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+
+    width: 100%;
+  }
+
+  /*ajouter*/
+  .data {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid blue;
+    height: auto;
+
+    border-radius: 5px;
+
+    width: auto;
+    font-size: 0.5em;
+  }
+  /*
+
+    .table-ca {
+      border-collapse: collapse;
+      border: 2px rgb(red, green, blue); /*200, 200, 200,*/
+  /*ajouter*/
+  /*margin-bottom: 50px;*/ /*
+    }
+  
+    caption {
+      padding: 10px 10px 10px 10px;
+    }
+    caption {
+      display: table-caption;
+      text-align: center;
+    }
+  
+    .tbody-data {
+      display: table-row-group;
+      vertical-align: middle;
+      border-color: inherit;
+    }
+    .tr-data {
+      display: table-row;
+      vertical-align: inherit;
+      border-color: inherit;
+    }
+    .th-data {
+      background-color: rgb(235, 235, 235);
+      /*ajouter*/ /*
+      color: black;
+
+      font-size: 0.5em;
+    }
+    .td-data,
+    .th-data,.row {
+      border: 1px solid rgb(190, 190, 190);
+      padding: 10px 20px;
+
+      /*ajouter*/ /*
+      color: black;
+
+
+      font-size: 0.5em;
+    }
+
+*/
+}
+
+/*------------------------------------------------------- TABLE DATA -------------------------------------------------*/
+@media (max-width: 600px) {
+  .content-data-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /*auto*/
+    /*border: 1px solid red;*/
+    padding: 5px;
+  }
+
+  .data-tab {
+    width: 100%; /*auto*/
+    border: 1px solid blue;
+    padding: 10px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 599px) {
+  .data-tab {
+    width: 100%; /*100%*/
+  }
+
+  .data-tab {
+    width: auto;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 899px) {
+  .data-tab {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 900px) and (max-width: 1223px) {
+  .data-tab {
+    width: 80%;
+  }
+}
+
+/*------------------------------------------------------ TABLE LISTING -----------------------------------------------*/
+@media (max-width: 600px) {
+  .content-listing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /*auto*/
+    /*border: 1px solid red;*/
+    padding: 5px;
+  }
+
+  .listing {
+    width: 100%; /*auto*/
+    border: 1px solid blue;
+    padding: 10px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 599px) {
+  .listing {
+    width: 100%; /*100%*/
+  }
+
+  .listing {
+    width: auto;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 899px) {
+  .listing {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 900px) and (max-width: 1223px) {
+  .listing {
+    width: 80%;
+  }
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/

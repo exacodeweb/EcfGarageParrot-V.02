@@ -1,0 +1,320 @@
+/*== VALIDER W3W ==*/
+/*================================================== TOPBAR ET NAVBAR ================================================*/
+@media screen /*and (min-width: 320px) */ and (max-width: 700px) {
+  /*test 17*/
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 100%;
+    margin-top: 0px;
+    /*overflow: hidden;*/
+  }
+}
+
+/*------------------------------------------------------------------------------------------------------------ LOGO --*/
+@media screen /*and (min-width: 320px) */ and (max-width: 700px) {
+  /*test 17*/
+  .img-logo-1 {
+    height: 100%;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: 100%;
+    /*opacity: 0.8;*/
+    background: transparent;
+  }
+
+  .title-acceuil-c {
+    position: absolute;
+    top: 50px; /*280px*/ /* POUR REGLE LA HAUTEUR DU TITRE */ /* 30px */
+    z-index: 1;
+  }
+
+  /*----------------------------------------------------------------------------------------------------------TOPBAR--*/ /** 700px < **/
+  .icon-telephone,
+  .bi-envelope {
+    height: 0.7em; /*12px*/ /*0.625vw*/
+    width: 0.7em; /*12px*/ /*0.625vw*/
+  }
+
+  .link-nav {
+    font-size: 0.7em; /*12px*/
+    width: 100%;
+    margin: 0px 0px 0px 5px !important;
+  }
+  /*-----------------------------------------------------NAVBAR--*/
+  .nav-link {
+    font-size: 12px; /*12px*/
+  }
+
+  .bi-unlock-fill {
+    height: 0.8em; /*12px*/ /*0.625vw*/
+    width: 0.8em; /*12px*/ /*0.625vw*/
+  }
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+@media screen /*and (min-width: 320px) */ and (max-width: 700px) {
+  /*test 17*/
+  .btn-toggle {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    padding: 0px 10px 0px 10px;
+  }
+}
+/*
+@media screen and (min-width: 320px) and (max-width: 576px) {
+  /*.link-nav:hover {
+        background: crimson;
+      }*/ /*
+}                                                                         */
+
+/*------------------------------------------------------------------------------------------------------------ MENU --*/
+@media screen and (max-width: 700px) {
+  /*and (min-width: 320px)*/
+  .navbar {
+    height: auto;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    /* background: #3533cd;*/
+
+    height: 50px; /*50px*/
+  }
+
+  .nav-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 50px; /*100%*/ /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+  }
+
+  /*------------------------------------------------------------------------------------------------ OPTION TOGGLER --*/
+
+  /*@media screen and (min-width: 320px) and (max-width: 576px) {*/
+  .navbar-toggler {
+    /* 2 */
+    /*margin-right: 20px;*/
+    margin: 10px 0px 10px 10px;
+    /* 10px-haut 0px-droite 10px-bas 10px-gauche */
+    /*border-color: #3533cd;*/
+  }
+  /*}*/
+
+  /*@media screen and (min-width: 320px) and (max-width: 576px) {*/
+  .navbar-nav {
+    /* 4 */
+    margin: auto;
+    width: 100%;
+    margin-top: 0px; /*80px*/
+
+    height: 50px; /*70px*/
+  }
+  /*}*/
+
+  /*--------------------------------------------------------*/
+  /*@media screen and (min-width: 320px) and (max-width: 700px)*/ /* {*/
+  .dropdown-menu,
+  .dropdown-item {
+    margin-left: 10px;
+  }
+  /*}*/
+
+  /*@media screen and (min-width: 320px) and (max-width: 700px) {*/
+  .nav-item {
+    margin: 5px;
+    /*width: 30%;*/
+    font-size: 12px;
+  }
+}
+/*-- TOPBAR --*/
+@media screen /*and (min-width: 320px) */ and (max-width: 900px) {
+  /*test 17*/
+  .btn-group {
+    width: 100%;
+    padding: 0px;
+  }
+
+  .link-nav {
+    font-size: 0.7em; /*12px*/
+    width: 100%;
+    /*padding: 0px 5px 0px 5px;/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*************/
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 900px) {
+  /* and (min-width: 576px) */
+  .btn-tel,
+  .nav-link {
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+
+/*-- NAVBAR --*/
+@media screen and (min-width: 701px) /*and (max-width: 900px) */ {
+  .btn-toggle {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    padding: 0px 10px 0px 10px;
+  }
+
+  .navbar {
+    height: auto;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    height: 50px;
+  }
+
+  .nav-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 50px; /*100%*/ /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+    /*padding: 0px 5px 0px 5px !important;*/
+  }
+  /*
+  .navbar-toggler {
+    margin: 10px 0px 10px 10px;
+  }*/
+
+  .navbar-nav {
+    margin: auto;
+    width: 100%;
+    margin-top: 0px; /*80px*/
+    height: 50px; /*70px*/ /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+  }
+
+  /*------------------------------------------------------------------------------------------------------------------*/
+  .navbar-toggler {
+    /* 2 */
+    margin: 10px 0px 10px 10px;
+    /*10px-haut 0px-droite 10px-bas 10px-gauche */
+    /*border-color: #3533cd;*/
+  }
+
+  .navbar {
+    /*height: 70px; /*auto*/ /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    /*background: #3533cd;*/
+
+    height: 50px;
+  }
+}
+
+@media screen and (min-width: 701px) {
+  /* and (max-width: 900px) */
+  .nav-item {
+    margin: 5px; /*5px*/ /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+    /*max-width: 30%;*/
+    font-size: 16px; /*25px*/
+  }
+
+  /*----------------------------------------------------------------------------------------------------------TOPBAR--*/ /** 700px > **/
+  .icon-telephone,
+  .bi-envelope,
+  path,
+  .bi-unlock-fill {
+    height: 0.8em; /*12px*/ /*0.625vw*/
+    width: 0.8em; /*12px*/ /*0.625vw*/
+  }
+
+  .link-nav {
+    font-size: 1em; /*12px*/
+    width: 100%;
+    margin: 0px 0px 0px 5px !important;
+  }
+
+  .title-acceuil-c {
+    position: absolute;
+    top: 40px; /*280px*/ /* POUR REGLE LA HAUTEUR DU TITRE */ /* 30px */
+    z-index: 1;
+  }
+
+  /*----------------------------------------------------------------------------------------------------------NAVBAR--*/
+  .nav-link {
+    font-size: 16px; /*12px*/ /*0.7em*/
+  }
+
+  .bi-unlock-fill {
+    height: 1em; /*12px*/ /*0.625vw*/
+    width: 1em; /*12px*/ /*0.625vw*/
+  }
+}
+/*======================================================== ! TEST =====================================================*/
+
+@media screen and (min-width: 992px) {
+  /*992px*/
+  /* and (max-width: 992px)*/
+  .nav-link {
+    padding: 0px 5px 0px 5px !important;
+  }
+
+  .nav-item {
+    margin: 0px 5px 0px 5px;
+
+    width: auto;
+
+    display: flex;
+    float: right;
+    /*flex-direction: row;
+    justify-content: right;*/
+  }
+  .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    /*float: right;*/
+    justify-content: right;
+  }
+}
+/*
+  .visible {
+    display: table;
+  }
+  #menumobile {
+    display: none;
+  }
+  @media (max-width: 767px) {
+    .visible {
+      display: none;
+    }
+    #menumobile {
+      display: table;
+    }
+  }*/
+
+/*------------------------------------------------------------------------------------------------------------TOPBAR--*/ /** 300px < **/
+@media screen /*and (min-width: 300px) */ and (max-width: 300px) {
+  .icon-telephone,
+  .bi-envelope,
+  path {
+    height: 0.6em; /*12px*/ /*0.625vw*/
+    width: 0.6em; /*12px*/ /*0.625vw*/
+  }
+
+  .link-nav {
+    font-size: 0.6em; /*12px*/
+    width: 100%;
+    margin: 0px 0px 0px 5px !important;
+  }
+  /*----------------------------------------------------------------------------------------------------------NAVBAR--*/
+  .nav-link {
+    font-size: 0.8em; /*12px*/
+  }
+  .bi-unlock-fill {
+    height: 0.8em; /*12px*/ /*0.625vw*/
+    width: 0.8em; /*12px*/ /*0.625vw*/
+  }
+}

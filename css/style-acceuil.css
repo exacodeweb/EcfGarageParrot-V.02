@@ -1,0 +1,1144 @@
+/*======================================================= PAGE ACCEUIL ===============================================*/
+
+/*@charset "UTF-8"; /*déterminer l'encodage d'une feuille de style.*/
+
+/*
+html {
+  /*--Ligne: 180--*/ /*
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+.body {
+  background: #f1f1f1; /*lightgray*/ /*#f2f2f2*/ /*#e6e6fa*/
+/*lightcyan*/ /*
+  background-position: 100% 100%;
+  height: auto;
+
+  font-family: Arial, sans-serif;
+}
+
+button {
+  margin-top: 0px;
+}
+
+/*importé manuelement les fichiers typo*/
+/*source: https://www.apprendre-html-et-css.com/les_polices_de_caracteres.html*/
+/*https://fonts.google.com/specimen/Roboto+Slab*/ /*Generateur de typo*/
+/*https://www.fontsquirrel.com/*/ /*Generateur de typo*/
+/*https://www.alsacreations.com/article/lire/1741-Optimisez-vos-polices-web.html*/ /*a lire*/
+/*
+@font-face {
+  font-family: 'roboto_slab';
+  src: url('fonts/RobotoSlab-Light-webfont.eot'),
+     url('fonts/RobotoSlab-Light-webfont.eot?#iefix') format('embedded-opentype'),
+       url('fonts/RobotoSlab-Light-webfont.woff') format('woff'),
+       url('fonts/RobotoSlab-Light-webfont.woff2') format('woff2'),
+       url('fonts/RobotoSlab-Light-webfont.svg#robotoSlab_light') format('svg');
+  font-weight: 100;
+  font-style: normal;
+  font-stretch: normal;
+}*/
+
+/*---------------------------------------------------------------------------- BOUTON Lien CONTACTER acceuil > form --*/
+/*-- LIGNE 371 --*/
+.section-connect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.connect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+
+  color: white;
+  font-weight: 600;
+
+  position: absolute;
+  top: 380px;
+  z-index: 1;
+
+  margin-top: 10px;
+  text-decoration: none;
+
+  height: 35px;
+  width: 200px;
+
+  border: 1px solid white;
+  border-radius: 50px;
+  opacity: 1;
+}
+/*
+.connect:hover {
+  text-decoration: none;
+  color: #7dc95e;
+  color: greenyellow;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+.link-btn:hover,
+.link-btn-grid:hover,
+.link-btn-Rating:hover,
+.link-btn-Rating-2:hover {
+  background-color: #d94350 !important; /*rgb(245, 84, 84)*/ /*POUR LES BOUTONS AU SURVOL*/ /*#d94350*/ /*#d9777f*/
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+}
+/*--------------------------------------------------------------------------------- BOUTON DE LIEN ANCRE CARTE AVIS --*/
+/*.link-btn-Rating:hover {
+  color: white;
+}*/
+/*
+.btn:hover {
+  text-decoration: none;
+  color: lightgreen;
+  /*background crimson*/ /*
+  background: green;
+  transition: 1s;
+}*/
+
+/*--------------------------------------------------------------------------------*/
+.btn-group-card {
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+/*-------------------------------------------------------------------------------- BOUTON DE LIEN ANCRE CARTE IMAGE --*/
+.link-btn,
+.link-btn-grid,
+.link-btn-Rating {
+  height: 30px;
+  width: 160px; /*150px*/
+  border-radius: 50px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d94350 !important; /*#d9777f*/ /*#d9777f*/ /*POUR LA COULEUR DES BOUTONS*/
+  border: 1px solid #d9777f !important;
+  color: white;
+}
+
+/*------------------------------------------------------------------------------ BOUTON DE LIEN ANCRE GRILLE IMAGES --*/
+.btn-group-grid {
+  height: 100%;
+
+  /* haut droite bas gauche */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  /*margin-bottom: 25px; /*25px*/
+  margin: 0px 0px 35px 0px;
+  /* haut droite bas gauche */
+  /*50px*/
+  width: 100%;
+}
+
+/*------------------------------------------------------ TITRES ---------------------------------------------------*/
+
+/* TITRE ACCEUIL */
+h1 {
+  color: #0000ff;
+  font-weight: 600;
+  font-size: 1.5em;
+}
+
+h2 {
+  /*color: #0000ff;*/
+  font-weight: 600;
+  font-size: 1.5em;
+  /*font-family: ;*/
+}
+
+h3 {
+  /*font-size: 20px;*/
+  font-size: 1.5em;
+  font-weight: 600;
+  /*font-family: ;*/
+}
+
+h5 {
+  display: flex;
+  color: white;
+  /*font-weight: 600;*/
+  /*font-size: 1.5em;*/
+  /*font-family: ;*/
+}
+
+/*-------------------------------- BLOCK SECTION TITRE --*/
+/* TITRE ACCEUIL */ /* LIGNE 361 */
+.section-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+}
+
+/* TITRE ACCEUIL */
+.title-acceuil {
+  /*title*/
+  /*en superposition*/
+  /*display: flex;*/
+
+  position: absolute;
+  top: 150px; /*280px*/ /* POUR REGLE LA HAUTEUR DU TITRE */
+  z-index: 1;
+
+  /*height: 50px;*/
+  height: auto;
+  /*width: 100%;*/
+
+  margin-top: 10px;
+  text-decoration: none;
+
+  font-size: 65px !important;
+  font-weight: 595;
+  font-family: "Tangerine", Arial, serif; /* Typo pour le Titre, et typo de substitution */
+  text-shadow: 4px 4px 4px blue;
+  color: white;
+  opacity: 1;
+}
+/* POUR LA COULEUR DES TITRES */
+.sub-title-h2,
+.title-art,
+.title-grid {
+  color: #d9777f;
+  text-align: center;
+}
+
+/* POUR LA CARTE AVIS */ /*
+.title-grid,*/
+.title-rating,
+.title-star {
+  color: black;
+  text-align: center;
+  /*font-size: 16px;*/
+  justify-content: center;
+}
+
+.title-art {
+  color: black;
+  text-align: center;
+  /*font-weight: 600;*/
+  /*font-size: 1.5em;*/
+  /*font-family: ;*/
+}
+
+/*FORM-CONTACT*/
+.title-h4 {
+  text-align: center;
+  /*font-weight: 600;*/
+  /*font-size: 1.5em;*/
+  /*font-family: ;*/
+}
+
+/*FORM-CONTACT*/
+.title-map {
+  text-align: center;
+  margin: 40px 0px 20px 0px;
+  padding: 10px;
+  width: 100%;
+}
+
+.path {
+  margin-left: 10px;
+}
+
+/*PHOTO DE PROFIL*/ /*
+#profile-pic {
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}*/
+
+/*--------------------------------------------------------------------------------------------------- CONTENER MAIN --*/
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0px;
+}
+
+.main {
+  background-color: #f2f2f2; /*rgba(211, 211, 211, 0.5)*/ /*lemonchiffon*/
+}
+
+/*--------------------------------------------------------------------------------------------------- ARTICLE HEADER--*/
+/*
+.sub-title-h1,
+.title-grid {
+  color: #0000ff !important; /*black*/
+/*border-bottom: 1px solid white;*/ /*
+}
+*/
+.content-article {
+  display: flex;
+  flex-direction: row; /*column*/
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  /*border: 1px solid red;*/
+}
+/*
+/* a tester desactiver */ /*
+.article-first,
+.article-second {
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+  width: 90%;
+  /*background-color: #f2f2f2; /*#ffff*/ /*
+  border-radius: 15px;
+
+  margin-bottom: 50px;
+  /*border: 1px solid grey;*/ /*
+}
+
+/*--------------------------------------------------------------------------------------------------- ARTICLE HEADER--*/
+
+.title-h2,
+.sub-title-h3,
+.title-grid {
+  /*.sub-title-h1,*/
+  color: #0000ff !important; /*black*/
+  /*border-bottom: 1px solid white;*/
+}
+
+.title-h2 {
+  font-size: 1.5em;
+  font-weight: 500;
+  letter-spacing: normal;
+  font-family: Verdana;
+}
+
+.sub-title-h3 {
+  font-size: 1.17em;
+  font-weight: 500;
+  letter-spacing: normal;
+  font-family: Verdana;
+}
+
+/*-----------------------------------------------------*/
+.content-article {
+  display: flex;
+  flex-direction: row; /*column*/
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  /*border: 1px solid red;*/
+}
+
+/* a tester desactiver */
+.article-first,
+.article-second {
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+  width: 90%;
+  /*background-color: #f2f2f2; /*#ffff*/
+  border-radius: 15px;
+
+  margin-bottom: 50px;
+  /*border: 1px solid grey;*/
+}
+/*-----------------------------------------------------*/
+
+.section-article {
+  display: flex;
+  flex-direction: row; /*column*/
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  margin-bottom: 0px;
+  /*border: 1px solid red;*/
+}
+
+/*-- DOCS ACCEUIL: ARTICLE TITLE --*/
+.article-A {
+  /* .article-1 */
+  display: flex;
+  flex-direction: column; /*column*/
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  /*60%*/
+  /*background: lightcyan;/**/
+  margin: 20px 0px 20px 0px;
+  /* haut droite bas gauche */
+
+  padding: 0px; /*10px*/
+}
+
+p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+  width: 100%;
+
+  margin-top: 0px;
+  margin-top: 20px;
+
+  margin-bottom: 0px;
+  padding: 0px;
+
+  text-align: center;
+  /*font-weight: 600;*/
+  /*font-size: 1.5em;*/
+  /*font-family: ;*/
+}
+
+.section-art {
+  display: flex;
+  justify-content: center;
+}
+
+.art {
+  width: 80%;
+  padding: 8px; /*5px*/
+  text-align: center;
+  /*font-weight: 600;*/
+  /*font-size: 1.5em;*/
+  /*font-family: ;*/
+  /*line-height: 1.5em;*/
+  /*letter-spacing: 0.1rem;*/
+  /* word-spacing: 0.1rem;*/
+}
+
+.art-1 {
+  display: flex;
+  flex-direction: row; /*column*/
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 0px; /*20px*/
+  margin-bottom: 0px; /*20px*/
+  width: 100%; /*90%*/
+  color: black;
+}
+
+/*-----------------------------------------------------------------------*/
+/*-- ARTICLE --*/
+.article-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: auto;
+  width: 80%; /*60%*/
+  margin-top: 0px; /*10px*/
+  margin-bottom: 10px;
+
+  background-color: #d9777f;
+  border-radius: 15px;
+}
+
+.content-2 {
+  display: flex;
+  flex-direction: column; /*row*/
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.section2-article {
+  display: flex;
+  flex-direction: column; /*row*/
+  text-align: left;
+  width: 100%;
+  margin-bottom: 0px; /*30px*/
+  height: auto;
+}
+
+.img-expo {
+  /*.card5-img-top*/
+  width: 150px; /*150px*/
+  height: auto; /*50px*/
+  background: lightgreen;
+}
+/*----------------------------------------------------------------------------------------------- PARAGRAPHE ARTICLE--*/
+p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+  width: auto;
+
+  margin-top: 0px;
+  margin-top: 20px;
+
+  margin-bottom: 0px;
+  padding: 0px;
+
+  text-align: justify;
+  /*font-weight: 600;*/
+  /*font-size: 1.5em;*/
+  /*font-family: ;*/
+}
+
+/*======= Typographie police d'ecritture =======*/
+/*
+p, .art {
+  /*font-weight: 600;*/
+/*font-size: 1.5em;*/
+/*font-family: ;*/
+/*line-height: 1.5em;*/
+/*letter-spacing: 0.1rem;*/
+/* word-spacing: 0.1rem;*/ /*
+}*/
+
+/*==============================================*/
+
+.art-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  margin-top: 0px; /*20px*/
+  margin-bottom: 20px;
+  width: 100%; /*90%*/
+}
+
+/*--------------------------------------------------------------------------------------------------------- CAROUSEL--*/
+
+.content-carousel-2 {
+  display: flex;
+  flex-direction: column; /*row*/
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto; /*auto*/
+  margin-bottom: 0px;
+  margin-top: 0px;
+  /*
+  background: #ffff;
+  border-radius: 15px;*/
+}
+
+.section-carousel {
+  display: flex;
+  flex-direction: row; /*row*/
+  justify-content: center;
+  width: 90%; /*34.375em*/ /*60%*/
+  /*height: 200px; /*auto*/
+  padding: 10px;
+  background: #ffff;
+  border-radius: 15px;
+}
+
+.d-block {
+  width: 100%; /*100%*/
+  height: 300px; /*auto*/ /*200px*/
+}
+
+.A {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+/*------------------------------------------------------------------------------------------------- BLOCK1-CARD-IMG --*/
+.block1-cardimg {
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  width: 100%; /*100%*/
+  /*border: 2px solid white;*/
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  height: auto;
+  margin-bottom: 50px;
+}
+
+/*-- DOCS ACCEUIL: CARD MG --*/
+.cardimg {
+  /*.section-A*/
+  width: 35%;
+  /*box-shadow: 0px 0px 40px rgba(128, 128, 128, 0.2);*/
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
+    rgba(0, 0, 0, 0.05) 0px 1px 1px 0px; /*source: https://getcssscan.com/css-box-shadow-examples*/
+  margin-bottom: 0px;
+  /*border: 0.2px solid gray;*/
+  /*border-radius: 5px;*/
+  background: #ffff; /*lavender*/ /*#f2f2f2*/
+  border-radius: 10px 10px 10px 10px;
+}
+
+/*--------------------------------------------*/ /* POUR CENTRE L'IMAGE */
+figure {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0px;
+}
+
+figcaption {
+  display: flex;
+  width: 100%;
+}
+/*--------------------------------------------*/
+.card-img-top {
+  object-fit: fill;
+  width: auto; /*100%*/
+  height: 100%;
+  /*background: lawngreen;
+  background: #7dc95e;*/
+  background-color: #abebc6;
+  border-radius: 10px 10px 0px 0px !important; /*test*/
+}
+
+/*-------------------------------------------------------------------------------------------------------- CSS GRID --*/
+
+.content-grid {
+  /*.ocasions */
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  /*Test*/
+  padding: 5px;
+
+  /*Test*/
+  justify-content: center;
+}
+
+/*----------------------------------Test */
+.content-grid {
+  /*.ocasions */
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  /*Test*/
+  padding: 5px;
+
+  /*Test*/
+  justify-content: center;
+}
+
+.grid {
+  /*section-grid*/
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0px;
+  margin-bottom: 10px;
+  /*80px*/
+  /*test*/
+  width: auto;
+}
+
+.wrapper {
+  /*.box-img */ /*
+  display: grid;
+  grid-template-columns:1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px 10px;*/
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /*grid-template-columns: 250px 250px;*/
+  /*grid-template-columns: 250px 250px;*/
+  /*grid-template-rows: repeat(2, 1fr);*/
+  grid-auto-rows: 1fr 1fr; /*150px*/
+  gap: 10px 10px;
+}
+
+.wrapper {
+  /*.box-img*/
+  border: 4px solid white;
+  align-content: space-between;
+  justify-content: space-around;
+}
+
+.wrapper {
+  /*.box-img*/
+  margin: 0px;
+  padding: 0px;
+}
+
+/*.box {
+  background: lightskyblue; /**/ /*
+}*/
+
+/* grid container*/
+.box1 {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+/*grid élément*/
+.box2 {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.box3 {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.box4 {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+/* si image en ligne desactiver arriere plan de couleur */
+.box1,
+.box2,
+.box3,
+.box4 {
+  background: #abebc6; /**/
+  /*lawngreen*/
+  height: 150px; /*150px*/
+  width: 100%; /*150px*/
+
+  /*Test
+display: flex;
+flex-direction: row;
+justify-content: center;
+margin: 0;*/
+}
+
+/*-- BOUTON DE LIEN ANCRE CARTE GRILLE IMAGES --*/
+.link-btn-grid {
+  margin-top: 20px; /*20px*/ /*40px*/
+  margin-bottom: 25px;
+}
+
+/*---------------------------------------------------------------------------------------------- COMPOSANT NOTATION --*/
+
+.content-Rating {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px;
+}
+
+.rating {
+  border: 1px solid gray;
+  border-radius: 15px;
+  padding: 10px;
+  height: 23.75em;
+  width: 100%;
+  /*background: rgb(252, 252, 229);*/
+  background-color: #ffff;
+  /*box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);*/
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
+    rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+}
+
+/*ajouter*/
+.my-profile-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*PHOTO DE PROFIL*/
+#profile-pic {
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 80px; /*60px*/
+  height: 80px;
+  object-fit: cover;
+}
+
+#profile-name {
+  margin-top: 15px;
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+/**/
+.avis {
+  height: 10.125em;
+  border: 1px solid grey;
+}
+
+blockquote {
+  /*background: lightgoldenrodyellow;*/
+  /*background: lightgoldenrodyellow;/*#f3deba*/
+  height: auto; /*auto*/
+  width: 12.5em; /*100% ?*/
+  padding: 5px;
+  /*5px*/
+  margin-bottom: 50px;
+  /*box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.25);*/
+  /*: 0px 2px 2px 0px rgba(0, 0, 0, 0.25)*/
+  text-align: center;
+}
+
+.art-rtn {
+  /*height: 9.125em;
+  vertical-align: top;*/
+  height: auto;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.title-rating {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logo-rtn {
+  margin: 0px 5px 0px 0px;
+}
+
+/*-- BOUTON DE LIEN ANCRE CARTE AVIS --*/
+.rating-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: relative;
+  background: none;
+  /*background: #fff;*/
+  padding: 0px 0px 0px 0px;
+  /* 25px 50px 35px*/
+  /*haut droite */
+  /*border-radius: 5px;*/
+  /*25px*/
+  /*box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);*/
+}
+
+.btn-rating {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 0px 0px 0px; /*35px*/
+  width: 100%;
+}
+
+/*-- BOUTON DE LIEN ANCRE CARTE AVIS --*/
+.link-btn-Rating {
+  margin-top: 20px; /*20px*/ /*40px*/
+  margin-bottom: 25px;
+}
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+.content-rating,
+.span-box {
+  /*.span-grid*/
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /*100%*/
+  word-spacing: 2px;
+}
+
+.span-box {
+  color: red;
+  font-family: "Tangerine", Arial, serif; /* Typo pour le Titre, et typo de substitution */
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/*--------------------------------------------------------------------------------------------- CONTENT-TEMOIGNAGES --*/
+.content-Rating-2 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; /*center*/
+  padding: 0px; /*10px*/
+  width: 100%;
+}
+
+.rating-avis-2 {
+  display: flex;
+  flex-direction: row;
+  background: #ffff;
+  width: 100%;
+  height: auto; /*80px*/
+  justify-content: space-around;
+}
+
+.rating-avis-2 {
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /*center*/
+}
+/*-------------------------------------------*/
+.title-note {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  text-align: center !important;
+  justify-content: center;
+  padding: 5px;
+}
+
+.title-rating-2 {
+  width: 100%; /*300px*/ /*100%*/
+  margin: 0px;
+  /*text-align: center !important;*/
+  /*font-size: 16px;*/
+  font-size: 1em; /*10/16=0.625em*/
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.title-rating {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+/*--------------------------------------*/
+.span-grid-2 {
+  width: auto;
+  /*margin: 5px;*/
+  padding: 5px;
+}
+
+/*
+  .content-box-stars-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+  }*/
+
+/*-- BOUTON DE LIEN ANCRE CARTE AVIS --*/ /*
+.rating-box-2 {
+display: flex;
+flex-direction: column;
+align-items: center;
+position: relative;
+background: none;
+padding: 0px 0px 0px 0px;
+}*/
+
+.logo-rtn {
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+/*-------------------------------------*/
+.rating-box-stars-2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  padding: 0px 0px 0px 0px;
+  border-radius: 5px;
+  height: 100%;
+  padding: 5px;
+}
+
+strong {
+  margin: 5px;
+}
+
+.star-rating-2 {
+  width: auto;
+  /*text-align: center;*/
+  /*align-items: center;*/
+  /*margin: 0px 10px 0px 10px;*/
+  margin-top: 0px !important;
+}
+
+.star-rating-2 {
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 1.5em;
+  justify-content: space-around;
+  padding: 0.2em;
+  text-align: center;
+  width: 5em;
+}
+
+.star-2 {
+  margin: 0px;
+  font-size: 25px;
+}
+
+.star-rating-2 input {
+  display: none;
+}
+
+.star-rating-2 label {
+  color: #ccc;
+  cursor: pointer;
+}
+
+.star-rating-2 :checked ~ label {
+  color: #f90;
+}
+
+.star-rating-2 label:hover,
+.star-rating-2 label:hover ~ label {
+  color: #fc0;
+}
+/*-------------------------------------------*/
+.certif/*,
+  .span-box-2*/ {
+  display: flex;
+  align-items: center;
+  color: red;
+  padding: 5px;
+}
+/*--------------------------------------------*/
+.rating-box-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /*margin: 10px;*/
+  padding: 5px;
+}
+
+.link-btn-2,
+.link-btn-Rating-2 {
+  height: 30px;
+  width: 160px; /*150px*/
+  border-radius: 50px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d94350 !important; /*#d9777f*/
+  border: 1px solid #d94350 !important; /*#d9777f*/
+}
+
+/*---------------------------------------------------------------------------------------------- COMPOSANT NOTATION --*/
+/*
+.star-rating input {
+  display: none;
+}
+
+.star-rating label {
+  color: #ccc;
+  cursor: pointer;
+}
+
+.star-rating :checked ~ label {
+  color: #f90;
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+  color: #fc0;
+}
+*/
+/*------------------------------------------------*/
+/*
+.content-box-stars {
+  display: flex;
+  flex-direction: row; /*row*/ /*
+  justify-content: center;
+  width: 100%;
+
+  /*box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);*/ /*
+}
+
+.rating-box-stars {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /*position: relative;*/ /*
+  background: none;
+  /*background: #fff;*/ /*
+  padding: 0px 0px 0px 0px;
+  /* 25px 50px 35px*/
+/*haut droite */ /*
+  border-radius: 5px;
+  /*25px*/ /*
+}
+
+.title-stars {
+  margin-top: 10px;
+}
+
+.star-rating {
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 1.5em;
+  justify-content: space-around;
+  padding: 0.2em;
+  text-align: center;
+  width: 5em;
+}
+
+/*---------------------------------------------------------------------------------------------------- PREVISION CSS--*/ /*
+.forecast {
+  margin: 0;
+  padding: 0.3rem;
+  background-color: #eee;
+  width: 100%;
+}
+
+.forecast > h1,
+.day-forecast {
+  margin: 0.5rem;
+  padding: 0.3rem;
+  font-size: 1.2rem;
+}
+
+.day-forecast {
+  background: right/contain content-box border-box no-repeat
+    url("/media/examples/rain.svg") white;
+}
+
+.day-forecast > h2,
+.day-forecast > p {
+  margin: 0.2rem;
+  font-size: 1rem;
+}
+*/
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/ /*
+span {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /*100%*/ /*
+  word-spacing: 2px;
+}
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
